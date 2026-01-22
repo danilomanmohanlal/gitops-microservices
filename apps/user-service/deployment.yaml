@@ -22,7 +22,7 @@ spec:
         #image: danilomanmohanlal/user-service:cbaefe9c196f8952323e8859aacf0906a9510627
           imagePullPolicy: Always
           ports:
-        - containerPort: 80
+        - containerPort: 5000
 ---
 apiVersion: v1
 kind: Service
