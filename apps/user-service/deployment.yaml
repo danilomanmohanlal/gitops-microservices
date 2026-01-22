@@ -13,18 +13,15 @@ spec:
       labels:
         app: user-service
     spec:
-    imagePullSecrets:
-      - name: dockerhub-secret
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
-      - name: user-service
-        image: danilomanmohanlal/user-service:cbaefe9c196f8952323e8859aacf0906a9510627
-      containers:
-      - name: user-service
+        - name: user-service
+          image: danilomanmohanlal/user-service:cbaefe9c196f8952323e8859aacf0906a9510627
         #image: tiangolo/uwsgi-nginx-flask:python3.9
         #image: danilomanmohanlal/user-service:cbaefe9c196f8952323e8859aacf0906a9510627
-        image: danilomanmohanlal/user-service:cbaefe9c196f8952323e8859aacf0906a9510627
-        imagePullPolicy: Always
-        ports:
+          imagePullPolicy: Always
+          ports:
         - containerPort: 80
 ---
 apiVersion: v1
