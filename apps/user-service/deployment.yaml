@@ -21,8 +21,8 @@ spec:
       containers:
       - name: user-service
         #image: tiangolo/uwsgi-nginx-flask:python3.9
-        #image: daniloalexandre84/user-service:1.0
-        image: daniloalexandre84/user-service:REPLACE_ME
+        #image: danilomanmohanlal/user-service:cbaefe9c196f8952323e8859aacf0906a9510627
+        image: danilomanmohanlal/user-service:cbaefe9c196f8952323e8859aacf0906a9510627
         imagePullPolicy: Always
         ports:
         - containerPort: 80
